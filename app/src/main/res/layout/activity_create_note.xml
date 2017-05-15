@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <TextView
+        android:id="@+id/create_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_create_title"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/create_title_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_title_textview"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@id/create_title_textview"
+        android:layout_marginEnd="40dp"
+        android:hint="@string/activity_create_title"
+        android:textColorHint="@color/hint_color"
+        android:maxLines="1"
+        android:maxLength="20"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/create_description_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_create_description"
+        android:layout_below="@id/create_title_edittext"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@id/create_title_textview"
+        />
+
+    <EditText
+        android:id="@+id/create_description_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_description_textview"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@id/create_title_textview"
+        android:layout_marginEnd="40dp"
+        android:hint="@string/activity_create_description"
+        android:textColorHint="@color/hint_color"
+        android:maxHeight="200dp"
+        android:maxLength="2000"
+        android:textSize="20sp"
+        />
+
+    <CheckBox
+        android:id="@+id/create_mark_as_important_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/create_description_edittext"
+        android:layout_alignStart="@id/create_title_textview"
+        android:text="@string/activity_create_mark_as_important"
+        android:textSize="24sp"
+        />
+
+    <TextView
+        android:id="@+id/activity_main_color_picker_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="Choose color"
+        android:textColor="@color/white_color"
+        android:layout_below="@id/create_mark_as_important_checkbox"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"
+        android:clickable="true"
+        android:textSize="24sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="300dp">
+
+        <Button
+            android:id="@+id/create_cancel_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/text_color"
+            android:text="@string/cancel"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/create_save_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/text_color"
+            android:text="@string/save"
+            android:textSize="20sp"
+            />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
